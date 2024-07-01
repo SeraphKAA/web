@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>15 game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+<div class="parent">
+    <div class="child1">
+        <div class="titleAndButton">
+            <h1>Пятнашки</h1>
+            <button id="game" class="game">Новая игра</button>
+            <br>
+            <br>
+        </div>
+
+        <!-- Блок результатов -->
+        <div id="result" class="result">
+            Время: <span class="time-text"></span>
+            <br>
+            Количество ходов: <span class="move-text"></span>
+        </div>
+
+        <!-- Блок выбора сложнсти -->
+        <div id="difficulty" class="difficulty">
+            Выберите сложность:
+            <br>
+            <input type="radio" name="game-difficulty" id="game-difficulty-one" value='4' checked>
+            <label for="game-difficulty-one">4x4 (classic)</label>
+            <br>
+            <input type="radio" name="game-difficulty" id="game-difficulty-two" value='5'>
+            <label for="game-difficulty-two">5x5</label>
+            <br>
+            <input type="radio" name="game-difficulty" id="game-difficulty-three" value='6'>
+            <label for="game-difficulty-three">6x6</label>
+        </div>
+    </div>
+    <div class="child2">
+        <!-- Игра -->
+        <div class="field" id="field"></div>
+    </div>
+    <div class="table_res" style="padding-top: 30px; ">
+
+        <table id="leaderboard">
+            <tr>
+                <th>Имя</th>
+                <th>Время</th>
+                <th>Количество ходов</th>
+            </tr>
+        </table>
+
+        <button onclick="endGame()">Проверка таблицы</button>
+        <button onclick="clearLeaderboard()">Очистить таблицу</button>
+    
+    </div>
+    
+</div>
+
+</body>
+</html>
