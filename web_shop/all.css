@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background: #ffffff;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+
+#up_label {
+    
+    position:fixed;
+    padding: 50px;
+    text-align: left center;
+    color: white;
+    font-weight: 100%;
+    background-image: url("images/2.jpg");
+    position: relative;
+    overflow:auto;
+    scrollbar-width: none;
+}
+
+.wrapper .sidebar{
+    background: rgb(57, 99, 124);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+
+    padding: 10px 15px;
+    transition: all 0.5s ease;
+}
+
+.sidebar li {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 10px;
+}
+
+.sidebar ul {
+    padding-bottom: 5px;
+}
+
+.sidebar a{
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+    color:white;
+}
+
+.names {
+    margin-left: 225px;
+    margin-top: 20px;
+    font-size: 32px;
+    padding-left: 20px;
+    font-family: 'Courier New', Courier, monospace;
+
+    padding-bottom: 20px;
+    font-weight: bolder;
+}
+
+.kategorii {
+    margin-left: 225px;
+
+    padding-bottom: 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.razdel {
+    margin: auto;
+
+    width: auto;
+    height: auto;
+    
+    background-color: gray;
+    
+    text-align: left center;
+    justify-content: center;
+    align-items: center;
+    align-content: center; 
+
+    position:relative;
+    width: 400px;       /*!!!*/
+    min-height: 500px;
+
+    padding: 5px;
+    margin-bottom: 50px;
+}
+
+.razdel img {
+    width: 320px;
+    height: 320px;
+}
+
+.nazvan{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.xar {
+    margin-top: 9px;
+    margin-bottom: 9px;
+    font-size: 14px;
+
+}
+
+.price {
+    font-size: 20px;
+
+    padding-right: 15px;
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+
+
+.footer{
+    background:#000;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+
+    margin-left: 225px;
+}
+    
+.footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+}
+    
+.footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+}
+    
+.footer .row a:hover{
+    color:#fff;
+}
+    
+.footer .row ul{
+    width:100%;
+}
+    
+.footer .row ul li{
+    padding-bottom: 5px;
+    margin:0px 30px;
+}
+    
+.footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+}
+    
+@media (max-width:720px){
+    .footer{
+        text-align:left;
+        padding:5%;
+    }
+
+    .footer .row ul li{
+        display:block;
+        margin:10px 0px;
+        text-align:left;
+    }
+    
+    .footer .row a i{
+        margin:0% 3%;
+    }
+}
+
+
+#about{
+    margin-left: 225px;
+    padding-left: 15px;
+    padding-top: 15px;
+
+}
+
+#about img{
+    border-radius: 15px;
+}

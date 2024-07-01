@@ -1,0 +1,35 @@
+body {
+    background-color: antiquewhite;
+    
+}
+
+#up_label {
+    
+    position:fixed;
+    padding: 30px;
+    text-align: left center;
+    color: white;
+    font-weight: 100%;
+    background-color: black;
+    position: relative; 
+    font-size: 30px;
+    overflow:auto;
+    scrollbar-width: none;
+}
+
+#kategorii {
+    width: 100%;
+    display: flex;
+}
+
+#razdel {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    
+    text-align: left center;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center; 
+}
